@@ -9,6 +9,9 @@ import java.util.List;
 public class AgentFinance extends User {
 
     @OneToMany(mappedBy = "agentFinance")
+    private List<Client> clients;
+
+    @OneToMany(mappedBy = "agentFinance")
     private List<Credit> credits;
 
     @OneToMany(mappedBy = "agentFinance")

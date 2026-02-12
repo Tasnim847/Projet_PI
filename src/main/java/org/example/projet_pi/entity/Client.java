@@ -11,6 +11,12 @@ import java.util.List;
 public class Client extends User {
 
 
+    @ManyToOne
+    private AgentAssurance agentAssurance;
+
+    @ManyToOne
+    private AgentFinance agentFinance;
+
     @OneToMany(mappedBy = "client")
     private java.util.List<Account> accounts;
 
