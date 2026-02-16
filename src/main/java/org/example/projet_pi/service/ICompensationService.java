@@ -1,0 +1,19 @@
+package org.example.projet_pi.service;
+
+import org.example.projet_pi.entity.Compensation;
+
+import java.util.List;
+
+public interface ICompensationService {
+
+    public Compensation addCompensation(Compensation compensation);
+
+    public Compensation updateCompensation(Compensation compensation);
+
+    public void deleteCompensation(Long id);
+
+    public Compensation getCompensationById(Long id);
+
+    public List<Compensation> getAllCompensations();
+
+}
