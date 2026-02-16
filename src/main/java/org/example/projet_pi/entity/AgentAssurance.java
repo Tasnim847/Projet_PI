@@ -7,6 +7,29 @@ import java.util.List;
 
 @Entity
 public class AgentAssurance extends User {
+    public List<InsuranceContract> getContracts() {
+        return contracts;
+    }
+
+    public void setContracts(List<InsuranceContract> contracts) {
+        this.contracts = contracts;
+    }
+
+    public List<Client> getClients() {
+        return clients;
+    }
+
+    public void setClients(List<Client> clients) {
+        this.clients = clients;
+    }
+
+    public List<Complaint> getComplaints() {
+        return complaints;
+    }
+
+    public void setComplaints(List<Complaint> complaints) {
+        this.complaints = complaints;
+    }
 
     @OneToMany(mappedBy = "agentAssurance")
     private List<InsuranceContract> contracts;
