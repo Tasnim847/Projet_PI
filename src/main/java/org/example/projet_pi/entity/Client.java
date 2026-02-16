@@ -1,8 +1,10 @@
 package org.example.projet_pi.entity;
 
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,8 +19,10 @@ public class Client extends User {
     @ManyToOne
     private AgentFinance agentFinance;
 
+
     @OneToMany(mappedBy = "client")
     private java.util.List<Account> accounts;
+
 
     @OneToMany(mappedBy = "client")
     private java.util.List<Credit> credits;
