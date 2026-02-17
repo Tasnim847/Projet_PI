@@ -13,6 +13,7 @@ import java.util.Optional;
 @CrossOrigin(origins = "*")
 public class AccountController {
 
+    //crud
     @Autowired
     private AccountRepository accountRepository;
 

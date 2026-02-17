@@ -9,6 +9,7 @@ import java.util.List;
 @Repository
 public interface AccountRepository extends JpaRepository<Account, Long> {
 
+    //crud
     // 🔹 Récupérer les comptes d'un client spécifique
     List<Account> findByClientId(Long clientId);
 

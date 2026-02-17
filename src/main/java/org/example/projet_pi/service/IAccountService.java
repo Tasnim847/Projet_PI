@@ -3,7 +3,7 @@ package org.example.projet_pi.service;
 import org.example.projet_pi.entity.Account;
 
 import java.util.List;
-
+//crud
 public interface IAccountService {
 
     // 🔹 Ajouter un compte

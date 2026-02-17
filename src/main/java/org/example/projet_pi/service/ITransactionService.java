@@ -5,7 +5,7 @@ import org.example.projet_pi.entity.Transaction;
 import java.util.List;
 
 public interface ITransactionService {
-
+//crud
     /**
      * Ajouter une transaction (dépôt ou retrait) à un compte spécifique
      * @param accountId l'ID du compte

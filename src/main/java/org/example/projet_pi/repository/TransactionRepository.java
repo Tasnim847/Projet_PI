@@ -8,7 +8,7 @@ import java.util.List;
 
 @Repository
 public interface TransactionRepository extends JpaRepository<Transaction, Long> {
-
+    //crud
     // 🔹 Trouver toutes les transactions d’un compte spécifique
     List<Transaction> findByAccountAccountId(Long accountId);
 
