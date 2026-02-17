@@ -27,20 +27,19 @@ public class TransactionController {
         return transactionRepository.findAll();
     }
 
-    // 🔹 Get transaction by ID
+
     @GetMapping("/{id}")
     public Transaction getTransactionById(@PathVariable Long id) {
         return transactionRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Transaction not found with id " + id));
     }
 
-    // 🔹 Get transactions by account ID
+
     @GetMapping("/account/{accountId}")
     public List<Transaction> getTransactionsByAccount(@PathVariable Long accountId) {
         return transactionRepository.findByAccountAccountId(accountId);
     }
 
-    // 🔹 Create new transaction
     @PostMapping("/account/{accountId}")
     public Transaction createTransaction(@PathVariable Long accountId,
                                          @RequestBody Transaction transaction) {
@@ -62,7 +61,7 @@ public class TransactionController {
         return transactionRepository.save(transaction);
     }
 
-    // 🔹 Update transaction
+
     @PutMapping("/{id}")
     public Transaction updateTransaction(@PathVariable Long id, @RequestBody Transaction transactionDetails) {
 
@@ -94,7 +93,7 @@ public class TransactionController {
         return transactionRepository.save(transaction);
     }
 
-    // 🔹 Delete transaction
+
     @DeleteMapping("/{id}")
     public String deleteTransaction(@PathVariable Long id) {
 
