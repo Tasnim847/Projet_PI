@@ -14,6 +14,8 @@ public class InsuranceProductController {
 
      IInsuranceProductService insuranceProductService;
 
+    //crude
+
     @PostMapping("/addProduct")
     public InsuranceProduct addProduct(@RequestBody InsuranceProduct product) {
         InsuranceProduct product1 = insuranceProductService.addProduct(product);

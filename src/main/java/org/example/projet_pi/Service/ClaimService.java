@@ -13,6 +13,8 @@ public class ClaimService implements IClaimService {
 
     ClaimRepository claimRepository;
 
+    //service
+
     @Override
     public Claim addClaim(Claim claim) {
         return claimRepository.save(claim);

@@ -6,6 +6,8 @@ import java.util.List;
 
 public interface IInsuranceProductService {
 
+    //Iservice
+
     public InsuranceProduct addProduct(InsuranceProduct product);
 
     public InsuranceProduct updateProduct(InsuranceProduct product);

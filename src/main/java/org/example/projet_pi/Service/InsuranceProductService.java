@@ -11,6 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 public class InsuranceProductService implements IInsuranceProductService{
 
+    //service
     InsuranceProductRepository insuranceProductRepository;
 
     @Override

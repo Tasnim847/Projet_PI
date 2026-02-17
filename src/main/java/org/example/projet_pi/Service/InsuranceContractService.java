@@ -11,7 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 public class InsuranceContractService implements IInsuranceContractService {
     InsuranceContractRepository insuranceContractRepository;
-
+    //service
     @Override
     public InsuranceContract addContract(InsuranceContract contract) {
         return insuranceContractRepository.save(contract);

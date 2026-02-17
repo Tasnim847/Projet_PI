@@ -12,6 +12,8 @@ public class ComplaintService implements IComplaintService{
 
     private final ComplaintRepository complaintRepository;
 
+    //service
+
     public ComplaintService(ComplaintRepository complaintRepository) {
         this.complaintRepository = complaintRepository;
     }

@@ -15,24 +15,24 @@ public class CompensationController {
     ICompensationService compensationService;
 
     @PostMapping("/addCompensation")
-    public Compensation addCompensation(Compensation compensation) {
+    public Compensation addCompensation(@RequestBody Compensation compensation) {
         Compensation newCompensation = compensationService.addCompensation(compensation);
         return newCompensation;
     }
 
     @PutMapping("/updateCompensation")
-    public Compensation updateCompensation(Compensation compensation) {
+    public Compensation updateCompensation(@RequestBody Compensation compensation) {
         Compensation newCompensation = compensationService.updateCompensation(compensation);
         return newCompensation;
     }
 
     @DeleteMapping("/deleteCompensation/{id}")
-    public void deleteCompensation(Long id) {
+    public void deleteCompensation(@PathVariable("id") Long id) {
         compensationService.deleteCompensation(id);
     }
 
     @GetMapping("/getCompensation/{id}")
-    public Compensation getCompensationById(Long id) {
+    public Compensation getCompensationById(@PathVariable("id") Long id) {
         Compensation compensation = compensationService.getCompensationById(id);
         return compensation;
     }

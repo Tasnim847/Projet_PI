@@ -9,6 +9,8 @@ import java.util.List;
 @Service
 public class NewsService implements INewsService {
 
+    //service
+
     private final NewsRepository newsRepository;
 
     public NewsService(NewsRepository newsRepository) {

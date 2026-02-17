@@ -13,6 +13,7 @@ import java.util.List;
 public class ClaimController {
     IClaimService claimService;
 
+    //crude
     @PostMapping("/addClaim")
     public Claim addClaim(@RequestBody Claim claim) {
         Claim claim1 = claimService.addClaim(claim);

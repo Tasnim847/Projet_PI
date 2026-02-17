@@ -33,6 +33,17 @@ public class Claim {
     @OneToMany(mappedBy = "claim", cascade = CascadeType.ALL)
     private List<Document> documents;
 
+    @OneToOne(mappedBy = "claim", cascade = CascadeType.ALL)
+    private RiskClaim riskClaim;
+
+    public RiskClaim getRiskClaim() {
+        return riskClaim;
+    }
+
+    public void setRiskClaim(RiskClaim riskClaim) {
+        this.riskClaim = riskClaim;
+    }
+
     public Long getClaimId() {
         return claimId;
     }

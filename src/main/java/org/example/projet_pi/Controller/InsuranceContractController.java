@@ -14,6 +14,8 @@ public class InsuranceContractController {
 
     IInsuranceContractService insuranceContractService;
 
+    //crude
+
     @PostMapping("/addContrat")
     public InsuranceContract addContract(@RequestBody InsuranceContract contract) {
         InsuranceContract contract1 = insuranceContractService.addContract(contract);

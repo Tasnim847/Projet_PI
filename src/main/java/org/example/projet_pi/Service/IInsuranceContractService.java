@@ -6,6 +6,8 @@ import java.util.List;
 
 public interface IInsuranceContractService {
 
+    //Iservice
+
     public InsuranceContract addContract(InsuranceContract contract);
 
     public InsuranceContract updateContract(InsuranceContract contract);

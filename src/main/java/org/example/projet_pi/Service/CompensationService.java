@@ -12,6 +12,9 @@ import java.util.List;
 public class CompensationService implements ICompensationService {
     CompensationRepository compensationRepository;
 
+    //service
+
+
     @Override
     public Compensation addCompensation(Compensation compensation) {
         return compensationRepository.save(compensation);

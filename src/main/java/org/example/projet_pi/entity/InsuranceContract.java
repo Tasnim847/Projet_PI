@@ -34,6 +34,10 @@ public class InsuranceContract {
     @OneToMany(mappedBy = "contract", cascade = CascadeType.ALL)
     private List<Claim> claims;
 
+    @OneToMany(mappedBy = "contract", cascade = CascadeType.ALL)
+    private List<Payment> payments;
+
+
     public double calculateCompensation(double claimedAmount) {
         double amountAfterDeductible = claimedAmount - deductible;
         if (amountAfterDeductible <= 0) return 0;
@@ -126,6 +130,14 @@ public class InsuranceContract {
 
     public void setStartDate(Date startDate) {
         this.startDate = startDate;
+    }
+
+    public List<Payment> getPayments() {
+        return payments;
+    }
+
+    public void setPayments(List<Payment> payments) {
+        this.payments = payments;
     }
 }
 

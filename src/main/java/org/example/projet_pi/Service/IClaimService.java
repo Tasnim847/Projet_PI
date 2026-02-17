@@ -5,6 +5,7 @@ import org.example.projet_pi.entity.Claim;
 import java.util.List;
 
 public interface IClaimService {
+//Iservice
 
     public Claim addClaim(Claim claim);
 

@@ -6,6 +6,8 @@ import java.util.List;
 
 public interface IComplaintService {
 
+    //Iservice
+
     public Complaint addComplaint(Complaint complaint);
 
     public Complaint updateComplaint(Complaint complaint);

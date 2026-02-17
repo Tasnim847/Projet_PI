@@ -6,6 +6,8 @@ import java.util.List;
 
 public interface ICompensationService {
 
+    //Iservice
+
     public Compensation addCompensation(Compensation compensation);
 
     public Compensation updateCompensation(Compensation compensation);

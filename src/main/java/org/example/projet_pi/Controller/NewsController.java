@@ -14,6 +14,8 @@ public class NewsController {
     @Autowired
     private INewsService newsService;
 
+    //crude
+    
     // Ajouter une news
     @PostMapping("/add")
     public News addNews(@RequestBody News news) {
